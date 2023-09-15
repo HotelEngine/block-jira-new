@@ -3,12 +3,12 @@ project_name: "block-jira"
 ################ Constants ################
 
 constant: CONNECTION_NAME {
-  value: "brick-layer"
+  value: "he_warehouse"
   export: override_optional
 }
 
 constant: SCHEMA_NAME {
-  value: "jira"
+  value: "pc_stitch_db.jira"
   export: override_optional
 }
 
