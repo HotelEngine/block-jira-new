@@ -3,12 +3,12 @@ project_name: "block-jira"
 ################ Constants ################
 
 constant: CONNECTION_NAME {
-  value: "he_warehouse"
+  value: "he_jira_connect"
   export: override_optional
 }
 
 constant: SCHEMA_NAME {
-  value: "pc_stitch_db.jira"
+  value: "jira"
   export: override_optional
 }
 
