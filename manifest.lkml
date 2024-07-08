@@ -13,6 +13,6 @@ constant: SCHEMA_NAME {
 }
 
 constant: COMPANY_DOMAIN {
-  value: "looker"
+  value: "hotelengine"
   export: override_optional
 }
