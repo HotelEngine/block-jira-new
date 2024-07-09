@@ -52,7 +52,7 @@ view: issue {
 
   dimension: self {
     type: string
-    sql: ${TABLE}.self ;;
+    sql: ${TABLE}.summary ;;
   }
 
   dimension: change_log {
