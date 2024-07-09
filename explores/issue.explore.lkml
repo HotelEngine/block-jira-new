@@ -15,7 +15,7 @@ explore: issue {
   }
   join: epic {
     type: left_outer
-    sql_on:  ${issue.epic_link} = ${epic.id} ;;
+    sql_on:  ${issue.parent_id} = ${epic.id} ;;
     relationship: one_to_many
   }
   join: project_board {
@@ -41,7 +41,7 @@ explore: issue {
   }
   join:  issue_type {
     type:  left_outer
-    sql_on: ${issue.id} = ${issue_type.id} ;;
+    sql_on: ${issue.issue_type} = ${issue_type.id} ;;
     relationship: many_to_one
   }
   join:  priority {

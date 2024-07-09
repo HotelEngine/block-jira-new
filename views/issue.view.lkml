@@ -30,13 +30,6 @@ view: issue {
     label: "View in Jira"
     }
   }
-  
-  dimension: epic_link {
-    type: string
-    sql: ${TABLE}.epic_link ;;
-    description: "Epic ID Link"
-    hidden: yes
-  }
 
   dimension: priority {
     type: number
@@ -59,7 +52,7 @@ view: issue {
 
   dimension: self {
     type: string
-    sql: ${TABLE}.self ;;
+    sql: ${TABLE}.summary ;;
   }
 
   dimension: change_log {
@@ -82,6 +75,11 @@ view: issue {
     description: "Wheather the SLA is less than 30 days away."
     type: yesno
     sql: CASE WHEN (${sla.remaining_time_dim}/ (1000 * 60 * 60 * 24)) < 30 THEN true ELSE false END ;;
+  }
+
+  dimension: issue_type {
+    type: number
+    sql: ${TABLE}.issue_type ;;
   }
 
   measure: count {
