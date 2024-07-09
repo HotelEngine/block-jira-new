@@ -30,13 +30,6 @@ view: issue {
     label: "View in Jira"
     }
   }
-  
-  dimension: epic_link {
-    type: string
-    sql: ${TABLE}.epic_link ;;
-    description: "Epic ID Link"
-    hidden: yes
-  }
 
   dimension: priority {
     type: number

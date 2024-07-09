@@ -3,7 +3,7 @@ include: "/views/*.view"
 explore: epic {
   join: issue {
     type: left_outer
-    sql_on: ${epic.id} = ${issue.epic_link} ;;
+    sql_on: ${epic.id} = ${issue.parent_id} ;;
     relationship: one_to_many
   }
   join: issue_board {
