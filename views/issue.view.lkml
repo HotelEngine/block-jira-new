@@ -77,6 +77,11 @@ view: issue {
     sql: CASE WHEN (${sla.remaining_time_dim}/ (1000 * 60 * 60 * 24)) < 30 THEN true ELSE false END ;;
   }
 
+  dimension: issue_type {
+    type: number
+    sql: ${TABLE}.issue_type ;;
+  }
+
   measure: count {
     type: count
   }
