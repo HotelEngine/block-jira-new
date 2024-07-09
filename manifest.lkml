@@ -1,4 +1,4 @@
-  project_name: "block-jira"
+project_name: "block-jira"
 
 ################ Constants ################
 
@@ -8,7 +8,7 @@ constant: CONNECTION_NAME {
 }
 
 constant: SCHEMA_NAME {
-  value: "jira"
+  value: "JIRA"
   export: override_optional
 }
 
