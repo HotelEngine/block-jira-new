@@ -25,7 +25,7 @@ view: sla {
   dimension: id {
     type: number
     primary_key: yes
-    sql: ${TABLE}.id ;;
+    sql: ${TABLE}._fivetran_id ;;
     hidden: yes
   }
 
