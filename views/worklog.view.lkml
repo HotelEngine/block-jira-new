@@ -39,7 +39,7 @@ view: worklog {
 
   dimension: time_spend_seconds {
     type: number
-    sql: ${TABLE}.time_spend_seconds ;;
+    sql: ${TABLE}.time_spent_seconds ;;
   }
 
   dimension: update_author_id {
